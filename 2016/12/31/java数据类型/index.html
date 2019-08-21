@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="null"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="xiaogang"><link rel="stylesheet" type="text/css" href="//fonts.loli.net/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/xiaoblog/css/style.css?v=2.0.4"><link rel="stylesheet" type="text/css" href="/xiaoblog/css/highlight.css?v=2.0.4"><link rel="Shortcut Icon" href="/xiaoblog/favicon.ico"><link rel="bookmark" href="/xiaoblog/favicon.ico"><link rel="apple-touch-icon" href="/xiaoblog/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/xiaoblog/apple-touch-icon.png"><title>java数据类型 | xiaogang</title></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">java数据类型</h1><a id="logo" href="/xiaoblog/.">xiaogang</a><p class="description">xiaogang</p></div><div id="nav-menu"><a href="/xiaoblog/." class="current"><i class="fa fa-home"> Start</i></a><a href="/xiaoblog/archives/"><i class="fa fa-archive"> Archiv</i></a><a href="/xiaoblog/about/"><i class="fa fa-user"> Über</i></a><a href="/xiaoblog/atom.xml"><i class="fa fa-rss"> RSS</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="Suche"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">java数据类型</h1><div class="post-meta"><a href="/xiaoblog/2016/12/31/java数据类型/#comments" class="comment-count"></a><p><span class="date">Dec 31, 2016</span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i>Schlägt</i></i></span></p></div><div class="post-content"><p>1.内置数据类型<br>2.引用数据类型</p>
+<h3 id="基本数据类型的基本比较"><a href="#基本数据类型的基本比较" class="headerlink" title="基本数据类型的基本比较"></a>基本数据类型的基本比较</h3><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th align="right">字节</th>
+<th align="right">默认值</th>
+<th align="right">封装类型</th>
+<th align="right">最大值</th>
+<th align="center">最小值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">Byte</td>
+<td align="right">2^7-1</td>
+<td align="center">-2^7</td>
+</tr>
+<tr>
+<td>int</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">Integer</td>
+<td align="right">2^31 - 1</td>
+<td align="center">-2^31</td>
+</tr>
+<tr>
+<td>short</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">Short</td>
+<td align="right">2^15 - 1</td>
+<td align="center">-2^15</td>
+</tr>
+<tr>
+<td>long</td>
+<td align="right">8</td>
+<td align="right">0l</td>
+<td align="right">Long</td>
+<td align="right">2^63-1</td>
+<td align="center">-2^63</td>
+</tr>
+<tr>
+<td>float</td>
+<td align="right">4</td>
+<td align="right">0.0f</td>
+<td align="right">Float</td>
+<td align="right"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>double</td>
+<td align="right">8</td>
+<td align="right">0.0d</td>
+<td align="right">Double</td>
+<td align="right"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>char</td>
+<td align="right">2</td>
+<td align="right">\u0000</td>
+<td align="right">Character</td>
+<td align="right">\uffff</td>
+<td align="center">\u0000</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td align="right">4</td>
+<td align="right">false</td>
+<td align="right">Boolean</td>
+<td align="right"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="代码比较"><a href="#代码比较" class="headerlink" title="代码比较"></a>代码比较</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">// byte  </span><br><span class="line">System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);  </span><br><span class="line">System.out.println(&quot;包装类：java.lang.Byte&quot;);  </span><br><span class="line">System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);  </span><br><span class="line">System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);  </span><br><span class="line">// short  </span><br><span class="line">System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE);  </span><br><span class="line">System.out.println(&quot;包装类：java.lang.Short&quot;);  </span><br><span class="line">System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE);  </span><br><span class="line">System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE);  </span><br><span class="line">// int  </span><br><span class="line">System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE);  </span><br><span class="line">System.out.println(&quot;包装类：java.lang.Integer&quot;);  </span><br><span class="line">System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE);  </span><br><span class="line">System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE);  </span><br><span class="line">// long  </span><br><span class="line">System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE);  </span><br><span class="line">System.out.println(&quot;包装类：java.lang.Long&quot;);  </span><br><span class="line">System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE);  </span><br><span class="line">System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE);  </span><br><span class="line">// float  </span><br><span class="line">System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE);  </span><br><span class="line">System.out.println(&quot;包装类：java.lang.Float&quot;);  </span><br><span class="line">System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE);  </span><br><span class="line">System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE);  </span><br><span class="line">// double  </span><br><span class="line">System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE);  </span><br><span class="line">System.out.println(&quot;包装类：java.lang.Double&quot;);  </span><br><span class="line">System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE);  </span><br><span class="line">System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE);</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">// byte </span><br><span class="line">基本类型：byte 二进制位数：8</span><br><span class="line">包装类：java.lang.Byte</span><br><span class="line">最小值：Byte.MIN_VALUE=-128</span><br><span class="line">最大值：Byte.MAX_VALUE=127</span><br><span class="line">// short </span><br><span class="line">基本类型：short 二进制位数：16</span><br><span class="line">包装类：java.lang.Short</span><br><span class="line">最小值：Short.MIN_VALUE=-32768</span><br><span class="line">最大值：Short.MAX_VALUE=32767</span><br><span class="line">// int </span><br><span class="line">基本类型：int 二进制位数：32</span><br><span class="line">包装类：java.lang.Integer</span><br><span class="line">最小值：Integer.MIN_VALUE=-2147483648</span><br><span class="line">最大值：Integer.MAX_VALUE=2147483647</span><br><span class="line">// long </span><br><span class="line">基本类型：long 二进制位数：64</span><br><span class="line">包装类：java.lang.Long</span><br><span class="line">最小值：Long.MIN_VALUE=-9223372036854775808</span><br><span class="line">最大值：Long.MAX_VALUE=9223372036854775807      </span><br><span class="line">// float  </span><br><span class="line">基本类型：float 二进制位数：32</span><br><span class="line">包装类：java.lang.Float</span><br><span class="line">最小值：Float.MIN_VALUE=1.4E-45</span><br><span class="line">最大值：Float.MAX_VALUE=3.4028235E38</span><br><span class="line">// double  </span><br><span class="line">基本类型：double 二进制位数：64</span><br><span class="line">包装类：java.lang.Double</span><br><span class="line">最小值：Double.MIN_VALUE=4.9E-324</span><br><span class="line">最大值：Double.MAX_VALUE=1.7976931348623157E308</span><br></pre></td></tr></table></figure>
+
+<h3 id="基本类型-封装类型-二者的区别"><a href="#基本类型-封装类型-二者的区别" class="headerlink" title="基本类型|封装类型 二者的区别"></a>基本类型|封装类型 二者的区别</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">声明方式不同：基本类型不使用new关键字，而包装类型需要使用new关键字来在堆中分配存储空间；</span><br><span class="line">存储方式及位置不同：基本类型是直接将变量值存储在栈中，而包装类型是将对象放在堆中，然后通过引用来使用；</span><br><span class="line">初始值不同：基本类型的初始值如int为0，boolean为<span class="literal">false</span>，而包装类型的初始值为null；</span><br><span class="line">使用方式不同：基本类型直接赋值直接使用就好，而包装类型在集合如Collection、Map时会使用到。</span><br></pre></td></tr></table></figure>
+
+</div><div class="post-copyright"><blockquote><p>Ursprünglicher Autor: xiaogang</p><p>Ursprünglicher Link: <a href="https://coderinfos.github.io/xiaoblog/2016/12/31/java数据类型/">https://coderinfos.github.io/xiaoblog/2016/12/31/java数据类型/</a></p><p>Copyright-Erklärung: Bitte geben Sie die Quelle des Nachdrucks an.</p></blockquote></div><div class="tags"></div><div class="post-share"><div class="social-share"><span>Aktie:</span></div></div><div class="post-nav"><a href="/xiaoblog/2019/07/22/elasticsearch/" class="pre">elasticsearch</a><a href="/xiaoblog/2016/12/23/设计模式/" class="next">设计模式</a></div><div id="comments"></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">Inhalte</i></div><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本数据类型的基本比较"><span class="toc-text">基本数据类型的基本比较</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码比较"><span class="toc-text">代码比较</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本类型-封装类型-二者的区别"><span class="toc-text">基本类型|封装类型 二者的区别</span></a></li></ol></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> Letzte</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2019/07/22/线程/">线程</a></li><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2019/07/22/redis/">redis</a></li><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2019/07/22/jvm/">jvm</a></li><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2019/07/22/springboot/">springboot</a></li><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2019/07/22/pay/">pay</a></li><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2019/07/22/spring cloud/">springcloud</a></li><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2019/07/22/shiro/">shiro</a></li><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2019/07/22/maven/">maven</a></li><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2019/07/22/elasticsearch/">elasticsearch</a></li><li class="post-list-item"><a class="post-list-link" href="/xiaoblog/2016/12/31/java数据类型/">java数据类型</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> Tags</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> Archiv</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/xiaoblog/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/xiaoblog/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/xiaoblog/archives/2016/10/">October 2016</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> Blogroll</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/xiaoblog/baidusitemap.xml">Sitemap</a> |  <a href="/xiaoblog/atom.xml">Abonnieren Sie diese Site</a> |  <a href="/xiaoblog/about/">Kontaktieren Sie den Blogger</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次，本站总访客数:<i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>人</p><p><span> Copyright &copy;<a href="/xiaoblog/." rel="nofollow">xiaogang.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/xiaoblog/js/search.json.js?v=2.0.4"></script><script type="text/javascript" src="/xiaoblog/js/toctotop.js?v=2.0.4" async></script><link rel="stylesheet" type="text/css" href="/xiaoblog/share/css/share.css"><script type="text/javascript" src="/xiaoblog/share/js/social-share.js" charset="utf-8"></script><script type="text/javascript" src="/xiaoblog/share/js/qrcode.js" charset="utf-8"></script></body></html>
